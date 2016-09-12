@@ -1,4 +1,4 @@
-<div class="row" ng-init="singleBlog.loadSingeBlog()">
+<div class="row" ng-init="singleBlog.loadSingleBlog()">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 
                 <h1>{{singleBlog.blog.heading}}</h1>
@@ -24,7 +24,7 @@
                         <a href="index.html#/edit/{{singleBlog.blog.blogId}}">Edit</a>
                     </li>
                     <li >
-                        <a ng-click="singleBlog.delete()">Delete</a>
+                        <a ng-click="singleBlog.delete($index)">Delete</a>
                     </li>
                 </ul>
             </div>

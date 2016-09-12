@@ -12,7 +12,7 @@
                         </h3>
                     </a>
                     <p class="post-meta">Posted by <a href="#">{{blog.author}}</a> on {{blog.created | date:'medium'}}</p>
-                    <button ng-click="myBlog.delete(blog.blogId)">Delete</button>
+                    <button ng-click="myBlog.delete(blog.blogId , $index)">Delete</button>
                 </div>
                 <hr>
                 
